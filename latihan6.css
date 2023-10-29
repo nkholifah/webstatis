@@ -15,8 +15,6 @@ body {
     width: 1000px;
     margin: 25px auto;
     background-color: rgb(8, 29, 16);
-    border: 5px double rgb(215, 224, 219);
-    outline: 7px outset white;
 }
 
 h1 {
@@ -38,9 +36,17 @@ h2 {
     border-bottom: 1px solid white;
 }
 
+hr {
+    width: 300px;
+    border-top: 3px solid whitesmoke;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
 h4 {
     color: white;
     margin: 0px 700px 0px 20px;
+    text-align: center;
 }
 
 ul li a {
@@ -111,11 +117,59 @@ table, th, tr, td {
 }
 
 /*main character style*/
-#character {
-    color: whitesmoke;
+#yoo {
+    padding-top: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-left: -20px;
+    padding-bottom: 50px;
 }
 
-/*dafpus*/
-.dafpus a {
-    color: rgb(255, 17, 0);
+.left {
+    width: 400px;
+    float: left;
+    background-color: rgb(23, 56, 36);
+    box-sizing: border-box;
+}
+
+.left img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 5px double rgb(215, 224, 219);
+    outline: 7px inset white;
+}
+
+.right {
+    width: 400px;
+    float: right;
+    background-color: rgb(23, 56, 36);
+    box-sizing: border-box;
+}
+
+.right img {
+    width: 240px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 5px double rgb(215, 224, 219);
+    outline: 7px inset white;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    zoom: 1;
 }
