@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--style-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <!--header-->
+    <header>
+      <div class="logo">
+        <a href="#"><img src="icon.png" /></a>
+        <a href="#" class="font-logo">PET<span>Joy</span></a>
+      </div>
+
+      <!--navbar-->
+      <nav>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <a href="about.html">About</a>
+          <div class="sub-menu">
+            <a href="about.html#profil">Profil</a>
+            <a href="about.html#history">History</a>
+            <a href="about.html#visimisi">Visi Misi</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="regis.html">Registration</a>
+        <div class="dropdown">
+          <a href="product.html">Product</a>
+          <div class="sub-menu">
+            <a href="product.html#food">Food</a>
+            <a href="product.html#vitamin">Vitamin</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--content-->
+    <div class="container">
+      <div class="regis">
+        <h4>Registration Form</h4>
+        <p>
+          Form registrasi ini digunakan untuk berinteraksi lebih lanjut dengan
+          website kami. Pelanggan dapat memesan produk, menyimpan riwayat
+          pembelian dan mendapatkan informasi lebih lanjut yang berada di toko
+          kami.
+        </p>
+
+        <form action="">
+          <h3>Registration Form</h3>
+          <div class="input-cont">
+            <i data-feather="user" style="margin-right: 10px; color: black"></i>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Username"
+              name="usrnm"
+            />
+          </div>
+          <div class="input-cont">
+            <i data-feather="mail" style="margin-right: 10px; color: black"></i>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
+          <div class="input-cont">
+            <i data-feather="lock" style="margin-right: 10px; color: black"></i>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Password"
+              name="pw"
+            />
+          </div>
+
+          <p>
+            By creating an account you agree to our
+            <span>Terms & Privacy</span>.
+          </p>
+
+          <div class="sign-up">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <p>©Made by : Kholifah | All right reserved</p>
+    </footer>
+    <!--icons-->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
